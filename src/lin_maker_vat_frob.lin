@@ -1,0 +1,12 @@
+@LIN:L1c:0.2
+@MAKER_VAT_FROB{
+  version=1
+  repo="makerdao/dss"
+  source="src/vat.sol frob/_add(uint,int)/_mul(uint,int)/_mul(uint,uint)"
+  license="AGPL-3.0-or-later"
+  commit="fa4f6630afb0624d04a003e920b0d71a00331d98"
+  profile="LINVM-1"
+  class="EXPERIMENTAL"
+  purpose="uint64_scale_maker_sky_vat_frob_cdp_safety_128bit"
+  note="Not mainnet uint256. RAY=1e27 and rad=wad*ray do not fit i64; RAY'=1e9. Storage live/rate/ink/art/Art/spot/line/Line/debt/dust and signed dink/dart are arguments. 128-bit product; live!=1, rate==0, overflow/underflow, ceiling, dust, and unsafe overdraw fail-close. No mapping/auth/wish/urns/gem/dai slots. Upstream AGPL is not vendored."
+}
